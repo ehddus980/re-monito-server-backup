@@ -10,7 +10,7 @@ const Login = () => {
     <>
       <BackDiv>
         <LoginBox>
-          <LoginBoxTitle>Login</LoginBoxTitle>
+          <LoginBoxTitle>대충 로고</LoginBoxTitle>
           <LoginFormContent />
         </LoginBox>
       </BackDiv>

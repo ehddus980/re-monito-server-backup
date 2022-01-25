@@ -5,7 +5,6 @@ const BackDiv = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right top, #1e2230, #0e0e0e);
 `;
 
 const LoginBox = styled.div`
@@ -15,10 +14,9 @@ const LoginBox = styled.div`
   justify-content: center;
 
   width: 500px;
-  height: 400px;
+  height: 500px;
   border-radius: 50px;
   background-color: white;
-  box-shadow: 0px 0px 100px black;
 `;
 
 const LoginBoxTitle = styled.div`
