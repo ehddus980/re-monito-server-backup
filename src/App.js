@@ -5,6 +5,7 @@ import Main from "./components/Container/Main/MainComponent";
 import Calendar from "./components/Container/Calendar/CalendarComponent";
 import TopNav from "./components/Container/Nav/TopNavComponent";
 import Planner from "./components/Container/Planner/PlannerComponent";
+import MainCam from "./components/Container/MainCam/MainCamera"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" element={<Main/>} />
         <Route path="/Calendar" element={<Calendar />} />
         <Route path="/Planner" element={< Planner/>}/>
+        <Route path="/MainCam" element={< MainCam/>}/>
       </Routes>
       {/* <ChakraProvider>
         <Main/>
