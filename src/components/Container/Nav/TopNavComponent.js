@@ -18,7 +18,7 @@ const TopNav = () => {
                     <Link to ="#" className="top-nav-list"><li >스터디그룹</li></Link>
                     <Link to ="/Calendar" className="top-nav-list"><li>달력</li></Link>
                     <Link to ="/Planner" className="top-nav-list"><li>플래너</li></Link>
-                    <Link to ="#" className="top-nav-list"><li >마이페이지</li></Link>
+                    <Link to ="/UserPageMain" className="top-nav-list"><li >마이페이지</li></Link>
                 </NavListContainer>
                     <div>{User.Name}님 환영합니다.</div> { /* 이부분 기능구현은 로그인 기능 갖춰지면 넣을예정 */}
             </NavAllContainer>

@@ -5,7 +5,10 @@ import Main from "./components/Container/Main/MainComponent";
 import Calendar from "./components/Container/Calendar/CalendarComponent";
 import TopNav from "./components/Container/Nav/TopNavComponent";
 import Planner from "./components/Container/Planner/PlannerComponent";
-import MainCam from "./components/Container/MainCam/MainCamera"
+import MainCam from "./components/Container/MainCam/MainCamera";
+import UserPageMain from "./components/Container/UserPageMain/UserPageMainComponent";
+import UserPageEdit from "./components/Container/UserPageEdit/UserPageEditComponent";
+import UserMeasurement from "./components/Container/UserMeasurement/UserMeasurementComponent";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path="/Calendar" element={<Calendar />} />
         <Route path="/Planner" element={< Planner/>}/>
         <Route path="/MainCam" element={< MainCam/>}/>
+        <Route path="/UserPageMain" element={<UserPageMain/>}/>
+        <Route path="/UserPageEdit" element={<UserPageEdit/>}/>
+        <Route path="/UserMeasurement" element={<UserMeasurement/>}/>
       </Routes>
       {/* <ChakraProvider>
         <Main/>
