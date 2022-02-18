@@ -133,10 +133,10 @@ const RightBlock = styled.div`
 
 const TimeBlock = styled.div`
   text-align: center;
-  line-height: 100px;
+  line-height: 15vh;
 
   color: white;
-  font-size: 30px;
+  font-size: 4vh;
   font-weight: 600;
   
   margin: 10px;
@@ -222,7 +222,7 @@ function CamSide() {
       
       <RightBlock>
       <TimeBlock>
-      <div id="display">
+      <div id="display">공부시간 :&nbsp; 
         <span>{("0" + Math.floor((time / 3600000) % 60)).slice(-2)}:</span> 
         <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
         <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}</span>
