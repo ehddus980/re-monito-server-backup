@@ -15,7 +15,7 @@ const TopNav = () => {
             <NavAllContainer>
                 <h1><Link to="./" className="top-nav-title">MONITO</Link></h1>
                 <NavListContainer>
-                    <Link to ="#" className="top-nav-list"><li >스터디그룹</li></Link>
+                    <Link to ="/StudyGroup" className="top-nav-list"><li >스터디그룹</li></Link>
                     <Link to ="/Calendar" className="top-nav-list"><li>달력</li></Link>
                     <Link to ="/Planner" className="top-nav-list"><li>플래너</li></Link>
                     <Link to ="/UserPageMain" className="top-nav-list"><li >마이페이지</li></Link>

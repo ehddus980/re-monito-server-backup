@@ -9,6 +9,7 @@ import MainCam from "./components/Container/MainCam/MainCamera";
 import UserPageMain from "./components/Container/UserPageMain/UserPageMainComponent";
 import UserPageEdit from "./components/Container/UserPageEdit/UserPageEditComponent";
 import UserMeasurement from "./components/Container/UserMeasurement/UserMeasurementComponent";
+import StudyGroup from "./components/Container/StudyGroup/studyGroup";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/UserPageMain" element={<UserPageMain/>}/>
         <Route path="/UserPageEdit" element={<UserPageEdit/>}/>
         <Route path="/UserMeasurement" element={<UserMeasurement/>}/>
+        <Route path="/StudyGroup" element={<StudyGroup/>}/>
       </Routes>
       {/* <ChakraProvider>
         <Main/>

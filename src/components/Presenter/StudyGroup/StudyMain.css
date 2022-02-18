@@ -1,0 +1,43 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+  }
+
+  main::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+  
+  main > section {
+    width: 110vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .categories {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+    margin-left: 3vh;
+  }
+  
+  
+  .card_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+
+  
+
+
+  
