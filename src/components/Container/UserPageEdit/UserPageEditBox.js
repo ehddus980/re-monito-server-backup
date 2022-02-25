@@ -8,11 +8,14 @@ const UserPageEditBox = () => {
             <table>
               <tr>
                 <td><Editname>커버사진</Editname></td>
-                <td><EditText>sdsdd</EditText></td>
+                <td><EditText>사진사진</EditText></td> 
               </tr>
               <tr>
                 <td><Editname>닉네임</Editname></td>
-                <td><EditText>sdsdd</EditText></td>
+                <td><EditText>
+                  <input placeholder="현재 닉네임"></input>
+                  <button>변경</button>
+                </EditText></td>
               </tr>
               <tr>
                 <td><Editname>직업</Editname></td>
@@ -32,7 +35,12 @@ const UserPageEditBox = () => {
               </tr>
               <tr>
                 <td><Editname>비밀번호 변경</Editname></td>
-                <td><EditText>sdsdd</EditText></td>
+                <td><EditText>
+                  <input placeholder="현재 비밀번호"></input> <br/>
+                  <input placeholder="새 비밀번호"></input> <br/>
+                  <input placeholder="비밀번호 재확인"></input> 
+                  <button>변경</button>
+                </EditText></td>
               </tr>
             </table>
           </BackDiv>

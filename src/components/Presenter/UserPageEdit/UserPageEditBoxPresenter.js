@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const BackDiv = styled.div`
     background-color: #EDDDB8;
-    background: repeating-linear-gradient(to right, #EDDDB8, #EDDDB8 200px, #FCFBF9 200px, #FCFBF9 872px);
+    background: repeating-linear-gradient(to right, rgb(252, 238, 196), #FCE9CE 200px, #FCFBF9 200px, #FCFBF9 872px);
     height: 484px;
     width: 872px;
     box-shadow : 3px 3px 10px 2px #DBD9D6;

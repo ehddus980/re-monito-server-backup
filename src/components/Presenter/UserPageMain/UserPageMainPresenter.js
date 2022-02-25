@@ -11,7 +11,7 @@ const MypageFlex = styled.div`
 const Edit = styled.div`
 width: 500px;
 height: 250px;
-background-color: #EDDDB8;
+background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
 margin-top: 30px;
 margin: 30px auto ;
 flex-direction: row;
@@ -22,7 +22,7 @@ padding: 1em;
 const Measurement = styled.div`
 width: 500px;
     height: 250px;
-    background-color: #EDDDB8;
+    background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
     margin-top: 30px;
     margin: 30px auto ;
     flex-direction: row;
@@ -33,7 +33,7 @@ width: 500px;
 const PoseHeart = styled.div`
 width: 500px;
     height: 250px;
-    background-color: #EDDDB8;
+    background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
     margin-top: 30px;
     margin: 30px auto ;
     flex-direction: row;
@@ -44,6 +44,7 @@ width: 500px;
 const Dday = styled.div`
 width: 500px;
     height: 250px;
+    background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
     background-color: #EDDDB8;
     margin-top: 30px;
     margin: 30px auto ;
@@ -62,5 +63,20 @@ font-size:2.7vh;
 margin-left:1vh;
 `;
 
+const UserBtn = styled.div`
+    text-align: center;
+    width:11vh;
+    height:5vh;
+    background-color:white;
+    border-radius: 10px;
+    padding-top:5px;
+    text-decoration: none;
+    border:25%;
+    .UserPageBtn{
+        color:black;
+        text-decoration:none;
+    }
+    
+`;
 
-export { Edit, Measurement, PoseHeart, Dday, MypageFlex, BackDiv, UserPageTitle, UserPageBox};
+export { Edit, Measurement, PoseHeart, Dday, MypageFlex, BackDiv, UserPageTitle, UserPageBox, UserBtn};

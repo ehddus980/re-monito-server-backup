@@ -6,6 +6,7 @@ import { Edit,
     BackDiv, 
     UserPageBox,
     UserPageTitle,
+    UserBtn,
  } from "../../Presenter/UserPageMain/UserPageMainPresenter";
 import UserPageMainBox from "./UserPageMainBox";
 import { Button } from "@chakra-ui/react";
@@ -19,24 +20,24 @@ const UserPageMain = () => {
                     <Edit>
                         <UserPageTitle>개인 정보 수정</UserPageTitle>
                         <UserPageBox/>
-                        <Link to ="/UserPageEdit"><Button>수정</Button></Link>
+                        <UserBtn><Link to ="/UserPageEdit" className="UserPageBtn">수정</Link></UserBtn>
                     </Edit>
                     <Measurement>
                         <UserPageTitle>측정 결과 분석</UserPageTitle>
                         <UserPageBox/>
-                        <Link to ="/UserMeasurement"><Button>확인하기</Button></Link>
+                        <UserBtn><Link to ="/UserMeasurement" className="UserPageBtn">확인하기</Link></UserBtn>
                     </Measurement>
                 </MypageFlex>
                 <MypageFlex>
                     <PoseHeart>
                         <UserPageTitle>자세 및 심박수</UserPageTitle>
                         <UserPageBox/>
-                        <Button>설정</Button>
+                        <UserBtn>설정</UserBtn>
                     </PoseHeart>
                     <Dday>
                         <UserPageTitle>디데이 설정</UserPageTitle>
                         <UserPageBox/>
-                        <Button>설정</Button>
+                        <UserBtn>설정</UserBtn>
                     </Dday>
                 </MypageFlex>
             </BackDiv>

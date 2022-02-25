@@ -28,6 +28,23 @@ const UserPageEditBtn = styled.div`
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    padding:20px;
+
+    font-size:2.5vh;
+    background-color:white;
+    border-radius: 10px;
+    padding-top:5px;
+    text-decoration: none;
+    border:25%;
+    .UserEditBtn{
+        padding:10px 20px;
+        background-color:#E6E6E6;
+        color:black;
+        text-decoration:none;
+        border-radius: 10px;
+    }
+
 `;
 
 

@@ -10,8 +10,8 @@ const UserPageEdit = () => {
                 <EditTitle>개인 정보 수정</EditTitle>
                 <UserPageEditBox/>
                 <UserPageEditBtnGroup>
-                    <UserPageEditBtn><Link to ="/UserPageMain"><Button>저장</Button></Link></UserPageEditBtn>
-                    <UserPageEditBtn><Link to ="/UserPageMain"><Button>취소</Button></Link></UserPageEditBtn>
+                    <UserPageEditBtn><Link to ="/UserPageMain" className="UserEditBtn">저장</Link></UserPageEditBtn>
+                    <UserPageEditBtn><Link to ="/UserPageMain"  className="UserEditBtn">취소</Link></UserPageEditBtn>
                 </UserPageEditBtnGroup>
                 
             </BackDiv>
