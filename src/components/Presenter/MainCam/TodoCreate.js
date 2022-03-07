@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { MdAdd } from 'react-icons/md';
 import { useTodoDispatch, useTodoNextId } from './TodoContext';
+import ListTimer from './Timer'
+
 
 const CircleButton = styled.button`
   background: #FFB68B;
@@ -65,6 +67,8 @@ const InsertForm = styled.form`
   border-top: 1px solid #e9ecef;
 `;
 
+
+
 const Input = styled.input`
   padding: 12px;
   border-radius: 4px;
@@ -75,28 +79,58 @@ const Input = styled.input`
   box-sizing: border-box;
 `;
 
+const TextAreaInput = styled.textarea`
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  width: 100%;
+  outline: none;
+  resize: none;
+  height: 100px;
+  font-size: 18px;
+  white-space: pre-wrap;
+`;
+
 function TodoCreate() {
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(''); 
+  const [content, setContent] = useState('');
 
   const dispatch = useTodoDispatch();
   const nextId = useTodoNextId();
 
   const onToggle = () => setOpen(!open);
   const onChange = e => setValue(e.target.value);
+  console.log(onChange);
+
+  const onChangeContent = e => setContent(e.target.value);
+  console.log(onChangeContent);
+
+  
+
+  const contentsReplaceNewline = () => {
+    return content.replaceAll("\n", "\r\n"); 
+  }
+
   const onSubmit = e => {
     e.preventDefault(); // 새로고침 방지
+    
     dispatch({
       type: 'CREATE',
       todo: {
         id: nextId.current,
         text: value,
+        textarea: contentsReplaceNewline(),
         done: false
       }
+      
     });
+ 
     setValue('');
+    setContent('');
     setOpen(false);
     nextId.current += 1;
+    console.log(nextId.current);
   };
 
   return (
@@ -110,7 +144,15 @@ function TodoCreate() {
               onChange={onChange}
               value={value}
             />
+            <TextAreaInput
+              autoFocus
+              placeholder="내용을 입력하세요"
+              onChange={onChangeContent}
+              value={content}
+            />
+            
           </InsertForm>
+          
         </InsertFormPositioner>
       )}
       <CircleButton onClick={onToggle} open={open}>

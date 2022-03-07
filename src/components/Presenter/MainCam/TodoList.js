@@ -72,16 +72,18 @@ function TodoList() {
 
   return (
     <>
-     <TodoListBlock>
-     {todos.map(todo => (
+    <TodoListBlock>
+    {todos.map(todo => (
         <TodoItem
           key={todo.id}
           id={todo.id}
           text={todo.text}
+          textarea={todo.textarea}
           done={todo.done}
         />
       ))}
-     </TodoListBlock>
+    </TodoListBlock>
+     
     </>
   );
 }

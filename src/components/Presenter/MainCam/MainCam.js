@@ -4,8 +4,8 @@ import { FaPause } from 'react-icons/fa';
 import { FaPlay } from 'react-icons/fa';
 import TodoCreate from './TodoCreate';
 import { TodoProvider } from './TodoContext';
-import TodoList from './TodoList';
-import { TodoHead } from './TodoList';
+import ListTimer from './Timer'
+import TodoList from './TodoList'
 
 
 const Div = styled.div`
@@ -185,6 +185,22 @@ const BtnAdd =styled.button`
   }
 `;
 
+
+const TodoListBlock = styled.div`
+height: 50vh;
+overflow-y: auto;
+&::-webkit-scrollbar {
+  width: 10px;
+}
+&::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+}
+`;
+
+
+
+
 function CamSide() {
   const [time, setTime] = React.useState(0);
   const [timerOn, setTimerOn] = React.useState(false);
@@ -228,11 +244,12 @@ function CamSide() {
         <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}</span>
       </div>
 
-      
       </TimeBlock>
         
         <TodoProvider>
-          <TodoList />
+          <TodoList>
+          
+          </TodoList>
           <TodoCreate></TodoCreate>
         </TodoProvider>
         

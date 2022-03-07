@@ -4,21 +4,25 @@ const initialTodos = [
   {
     id: 1,
     text: '데이터베이스',
+    textarea: '숨쉬기 추가1\n숨을 쉬어보장',
     done: true
   },
   {
     id: 2,
     text: '자료구조',
+    textarea: '숨쉬기 추가2\n숨을 쉬어보장',
     done: true
   },
   {
     id: 3,
     text: '숨쉬기',
+    textarea: '숨쉬기 추가3',
     done: false
   },
   {
     id: 4,
     text: 'react 구현하기',
+    textarea: '숨쉬기 추가4',
     done: false
   }
 ];
