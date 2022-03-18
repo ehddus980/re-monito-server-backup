@@ -13,8 +13,8 @@ const MypageEdit = styled.div`
 `;
 
 const EditTitle = styled.div`
-    font-size: 24px;
-    margin : 4vh 0vh 2vh 1vh;
+    font-size: 1.5em;
+    margin : 0.7em 0em 0.5em 0.4em
 `;
 
 const UserPageEditBtnGroup = styled.div`
@@ -31,18 +31,18 @@ const UserPageEditBtn = styled.div`
 
     padding:20px;
 
-    font-size:2.5vh;
+    font-size:1em;
     background-color:white;
-    border-radius: 10px;
-    padding-top:5px;
+    border-radius: 1em;
+    padding-top:0.4em;
     text-decoration: none;
     border:25%;
     .UserEditBtn{
-        padding:10px 20px;
+        padding : 0.7em 1.4em;
         background-color:#E6E6E6;
         color:black;
         text-decoration:none;
-        border-radius: 10px;
+        border-radius: 0.7em;
     }
 
 `;

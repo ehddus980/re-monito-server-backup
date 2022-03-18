@@ -54,22 +54,22 @@ width: 500px;
 `;
 
 const UserPageBox = styled.div`
-    height: 150px;
+    height: 11em;
 `;
 
 const UserPageTitle = styled.div`
 font-weight: bold;
-font-size:2.7vh;
+font-size:1.5em;
 margin-left:1vh;
 `;
 
 const UserBtn = styled.div`
     text-align: center;
-    width:11vh;
-    height:5vh;
+    width:5em;
+    height:2em;
     background-color:white;
     border-radius: 10px;
-    padding-top:5px;
+    padding-top:0.5em;
     text-decoration: none;
     border:25%;
     .UserPageBtn{

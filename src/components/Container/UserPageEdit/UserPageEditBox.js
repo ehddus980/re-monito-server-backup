@@ -1,4 +1,4 @@
-import { BackDiv, Editname,EditText } from "../../Presenter/UserPageEdit/UserPageEditBoxPresenter";
+import { BackDiv, Editname,EditText,Btnspace } from "../../Presenter/UserPageEdit/UserPageEditBoxPresenter";
 
 
 const UserPageEditBox = () => {
