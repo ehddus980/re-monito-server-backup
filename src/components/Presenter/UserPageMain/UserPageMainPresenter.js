@@ -9,48 +9,48 @@ const MypageFlex = styled.div`
 `;
 
 const Edit = styled.div`
-width: 500px;
-height: 250px;
+width: 32em;
+height: 15.5em;
 background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
-margin-top: 30px;
-margin: 30px auto ;
+margin-top: 3em;
+margin: 3em auto ;
 flex-direction: row;
-border-radius: 12.5px;
+border-radius: 1.5em;
 padding: 1em;
 `;
 
 const Measurement = styled.div`
-width: 500px;
-    height: 250px;
-    background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
-    margin-top: 30px;
-    margin: 30px auto ;
-    flex-direction: row;
-    border-radius: 12.5px;
-    padding: 1em;
+width: 32em;
+height: 15.5em;
+background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
+margin-top: 3em;
+margin: 3em auto ;
+flex-direction: row;
+border-radius: 1.5em;
+padding: 1em;
 `;
 
 const PoseHeart = styled.div`
-width: 500px;
-    height: 250px;
-    background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
-    margin-top: 30px;
-    margin: 30px auto ;
-    flex-direction: row;
-    border-radius: 12.5px;
-    padding: 1em;
+width: 32em;
+height: 15.5em;
+background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
+margin-top: 3em;
+margin: 3em auto ;
+flex-direction: row;
+border-radius: 1.5em;
+padding: 1em;
 `;
 
 const Dday = styled.div`
-width: 500px;
-    height: 250px;
-    background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
-    background-color: #EDDDB8;
-    margin-top: 30px;
-    margin: 30px auto ;
-    flex-direction: row;
-    border-radius: 12.5px;
-    padding: 1em;
+width: 32em;
+height: 15.5em;
+background:linear-gradient(80deg,rgb(252, 238, 196), #FCE9CE);
+background-color: #EDDDB8;
+margin-top: 3em;
+margin: 3em auto ;
+flex-direction: row;
+border-radius: 1.5em;
+padding: 1em;
 `;
 
 const UserPageBox = styled.div`
@@ -60,7 +60,7 @@ const UserPageBox = styled.div`
 const UserPageTitle = styled.div`
 font-weight: bold;
 font-size:1.5em;
-margin-left:1vh;
+margin-left:0.5em;
 `;
 
 const UserBtn = styled.div`
@@ -68,7 +68,7 @@ const UserBtn = styled.div`
     width:5em;
     height:2em;
     background-color:white;
-    border-radius: 10px;
+    border-radius: 0.5em;
     padding-top:0.5em;
     text-decoration: none;
     border:25%;
