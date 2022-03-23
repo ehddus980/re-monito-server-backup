@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 const CalendarBackDiv = styled.div`
+    display:flex;
+    justify-content: space-around;
     margin:2% 5%;
+    padding:0;
     border-radius: 20px;
     background:linear-gradient(80deg,rgb(247, 202, 54,0.7), rgb(241, 163, 127,0.7));
 `
 
-const OnlyCalendar = styled.div`
+const OnlyCalendar = styled.div`    
+    justify-content:flex-start;
     background-color:rgba(255, 255, 255, 0.575);
     width:45%;
     padding:2%;
@@ -27,4 +31,9 @@ const OnlyCalendar = styled.div`
     --fc-event-text-color :  rgb(65, 34, 20);
 `
 
-export { CalendarBackDiv, OnlyCalendar };
+const DetailCalendar = styled.div`
+    // background-color:rgba(255, 255, 0, 1);
+    width:45%;
+    padding:2%;
+`
+export { CalendarBackDiv, OnlyCalendar, DetailCalendar };

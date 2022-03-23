@@ -10,6 +10,8 @@ import UserPageMain from "./components/Container/UserPageMain/UserPageMainCompon
 import UserPageEdit from "./components/Container/UserPageEdit/UserPageEditComponent";
 import UserMeasurement from "./components/Container/UserMeasurement/UserMeasurementComponent";
 import StudyGroup from "./components/Container/StudyGroup/studyGroup";
+import CalendarBody from "./components/Container/Calendar/CalendarBody";
+
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
       <TopNav/>
       <Routes>  {/* Router 설정하기위해 기존의 App파일을 다음과 같이 설정함  */}
         <Route exact path="/" element={<Main/>} />
-        <Route path="/Calendar" element={<Calendar />} />
+        <Route path="/Calendar" element={<CalendarBody/>} />
         <Route path="/Planner" element={< Planner/>}/>
         <Route path="/MainCam" element={< MainCam/>}/>
         <Route path="/UserPageMain" element={<UserPageMain/>}/>

@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import FullCalendar from '@fullcalendar/react' 
-import dayGridPlugin from '@fullcalendar/daygrid' 
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+import rootReducer from './reducers';
 import CalendarBody from './CalendarBody';
 
-const Calendar = () => {
-  
-    return (
-        <CalendarBody/>
-    );
+const eventListener = () => {
+  return (
+    <>
+      <CalendarBody />
+    </>
+  )
 }
-
-export default Calendar;
+export default eventListener;
