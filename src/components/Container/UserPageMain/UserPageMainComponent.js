@@ -32,12 +32,12 @@ const UserPageMain = () => {
                     <PoseHeart>
                         <UserPageTitle>자세 및 심박수</UserPageTitle>
                         <UserPageBox/>
-                        <UserBtn>설정</UserBtn>
+                        <UserBtn><Link to="" className="UserPageBtn">설정</Link></UserBtn>
                     </PoseHeart>
                     <Dday>
                         <UserPageTitle>디데이 설정</UserPageTitle>
                         <UserPageBox/>
-                        <UserBtn>설정</UserBtn>
+                        <UserBtn><Link to="/UserDday" className="UserPageBtn">설정</Link></UserBtn>
                     </Dday>
                 </MypageFlex>
             </BackDiv>

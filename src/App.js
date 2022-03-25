@@ -10,10 +10,8 @@ import UserPageMain from "./components/Container/UserPageMain/UserPageMainCompon
 import UserPageEdit from "./components/Container/UserPageEdit/UserPageEditComponent";
 import UserMeasurement from "./components/Container/UserMeasurement/UserMeasurementComponent";
 import StudyGroup from "./components/Container/StudyGroup/studyGroup";
-
 import CalendarBody from "./components/Container/Calendar/CalendarBody";
-
-
+import UserDday from "./components/Container/UserDday/UserDdayComponent";
 import RoomCreate from "./components/Container/StudyGroup/roomCreate";
 import RoomUpdate from "./components/Container/StudyGroup/roomUpdate";
 
@@ -33,6 +31,7 @@ function App() {
         <Route path="/StudyGroup" element={<StudyGroup/>}/>
         <Route path="/RoomCreate" element={<RoomCreate/>}/>
         <Route path="/StudyGroup/RoomUpdate" element={<RoomUpdate/>}/>
+        <Route path="/UserDday" element={<UserDday/>}/>
       </Routes>
       {/* <ChakraProvider>
         <Main/>

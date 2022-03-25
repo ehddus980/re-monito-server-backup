@@ -64,18 +64,19 @@ margin-left:0.5em;
 `;
 
 const UserBtn = styled.div`
-    text-align: center;
-    width:5em;
-    height:2em;
+text-align: left;
+height:2em;
+border-radius: 0.5em;
+padding-top:0.5em;
+text-decoration: none;
+border:25%;
+.UserPageBtn{
+    padding : 0.7em 1.4em;
     background-color:white;
-    border-radius: 0.5em;
-    padding-top:0.5em;
-    text-decoration: none;
-    border:25%;
-    .UserPageBtn{
-        color:black;
-        text-decoration:none;
-    }
+    color:black;
+    text-decoration:none;
+    border-radius: 0.7em;
+}
     
 `;
 
