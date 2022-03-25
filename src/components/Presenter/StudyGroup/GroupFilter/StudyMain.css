@@ -4,17 +4,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     overflow: scroll;
-    -ms-overflow-style: none;
-  }
-
-  main::-webkit-scrollbar { 
-    width: 0 !important;
-    display: none; 
   }
   
-  main > section {
+  section {
     width: 110vh;
     display: flex;
     flex-direction: column;

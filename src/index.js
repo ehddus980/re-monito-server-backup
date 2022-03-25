@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from "react-router-dom";
 import { render } from 'react-dom';
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import rootReducer from '../src/components/Container/Calendar/reducers';
 import CalendarBody from './components/Container/Calendar/CalendarBody';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import axios from 'axios';
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 

@@ -31,7 +31,6 @@ const TodoHeadBlock = styled.div`
 
 export function TodoHead() {
     const todos = useTodoState();
-    console.log(todos);
     const undoneTasks = todos.filter(todo => !todo.done);
   
     const today = new Date();
@@ -69,7 +68,7 @@ const TodoListBlock = styled.div`
 
 function TodoList() {
   const todos = useTodoState();
-
+  console.log(todos)
   return (
     <>
     <TodoListBlock>

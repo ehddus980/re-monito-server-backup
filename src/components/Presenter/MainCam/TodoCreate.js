@@ -48,6 +48,7 @@ const CircleButton = styled.button`
     `}
 `;
 
+
 const InsertFormPositioner = styled.div`
   width: 90%;
   bottom: 0;
@@ -73,7 +74,7 @@ const Input = styled.input`
   padding: 12px;
   border-radius: 4px;
   border: 1px solid #dee2e6;
-  width: 100%;
+  width: 50%;
   outline: none;
   font-size: 18px;
   box-sizing: border-box;
@@ -83,7 +84,7 @@ const TextAreaInput = styled.textarea`
   padding: 12px;
   border-radius: 4px;
   border: 1px solid #dee2e6;
-  width: 100%;
+  width: 50%;
   outline: none;
   resize: none;
   height: 100px;
@@ -137,23 +138,24 @@ function TodoCreate() {
     <>
       {open && (
         <InsertFormPositioner>
-          <InsertForm onSubmit={onSubmit}>
-            <Input
-              autoFocus
-              placeholder="할 일을 입력 후, Enter 를 누르세요"
-              onChange={onChange}
-              value={value}
-            />
-            <TextAreaInput
-              autoFocus
-              placeholder="내용을 입력하세요"
-              onChange={onChangeContent}
-              value={content}
-            />
-            
-          </InsertForm>
+        <InsertForm onSubmit={onSubmit}>
+          <Input
+            autoFocus
+            placeholder="할 일을 입력 후, Enter 를 누르세요"
+            onChange={onChange}
+            value={value}
+          />
+          <TextAreaInput
+            autoFocus
+            placeholder="내용을 입력하세요"
+            onChange={onChangeContent}
+            value={content}
+          />
           
-        </InsertFormPositioner>
+        </InsertForm>
+        
+      </InsertFormPositioner>
+        
       )}
       <CircleButton onClick={onToggle} open={open}>
         <MdAdd />

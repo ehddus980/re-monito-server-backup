@@ -1,34 +1,41 @@
 import React, { useReducer, createContext, useContext, useRef } from 'react';
+import axios from 'axios';
+import { useState, useEffect } from "react";
 
-const initialTodos = [
-  {
-    id: 1,
-    text: '데이터베이스',
-    textarea: '숨쉬기 추가1\n숨을 쉬어보장',
-    done: true
-  },
-  {
-    id: 2,
-    text: '자료구조',
-    textarea: '숨쉬기 추가2\n숨을 쉬어보장',
-    done: true
-  },
-  {
-    id: 3,
-    text: '숨쉬기',
-    textarea: '숨쉬기 추가3',
-    done: false
-  },
-  {
-    id: 4,
-    text: 'react 구현하기',
-    textarea: '숨쉬기 추가4',
-    done: false
-  }
-];
+
+// const initialTodos = {
+//   "subjects": [
+//     {
+//       id: 1,
+//       text: '데이터베이스',
+//       textarea: '숨쉬기 추가1\n숨을 쉬어보장',
+//       done: true
+//     },
+//     {
+//       id: 2,
+//       text: '자료구조',
+//       textarea: '숨쉬기 추가2\n숨을 쉬어보장',
+//       done: true
+//     },
+//     {
+//       id: 3,
+//       text: '숨쉬기',
+//       textarea: '숨쉬기 추가3',
+//       done: false
+//     },
+//     {
+//       id: 4,
+//       text: 'react 구현하기',
+//       textarea: '숨쉬기 추가4',
+//       done: false
+//     }
+//   ],
+// } 
 
 function todoReducer(state, action) {
   switch (action.type) {
+    case 'SET_DATA':
+      return action.data;
     case 'CREATE':
       return state.concat(action.todo);
     case 'TOGGLE':
@@ -46,9 +53,25 @@ const TodoStateContext = createContext();
 const TodoDispatchContext = createContext();
 const TodoNextIdContext = createContext();
 
+
 export function TodoProvider({ children }) {
-  const [state, dispatch] = useReducer(todoReducer, initialTodos);
+
+  const [initdata , setData] = useState([]);
+  // const dataPromise = initialTodoo.then((response) => response.data)
+  useEffect(() => {
+    axios.get('http://localhost:3001/subjects')
+    .then((response) => {
+        setData(response.data)
+        console.log(response.data);
+        dispatch({ type: 'SET_DATA', data: response.data });
+    })
+    
+  }, []);
+  
+  const [state, dispatch] = useReducer(todoReducer, initdata);
   const nextId = useRef(5);
+  console.log(state);
+  
 
   return (
     <TodoStateContext.Provider value={state}>
@@ -66,7 +89,9 @@ export function useTodoState() {
   if (!context) {
     throw new Error('Cannot find TodoProvider');
   }
+  console.log(context)
   return context;
+  
 }
 
 export function useTodoDispatch() {
