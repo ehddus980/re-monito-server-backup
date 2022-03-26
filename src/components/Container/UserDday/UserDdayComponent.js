@@ -3,6 +3,7 @@ import {
     DdayTitle,
 }
 from "../../Presenter/UserDday/UseDdayPresent";
+import DdayMake from "./DdayMake";
 
 const UserDday = () => {
 
@@ -11,6 +12,7 @@ const UserDday = () => {
         <>
             <BackDiv>
                 <DdayTitle>디데이 설정</DdayTitle>
+                <DdayMake/>
             </BackDiv>
         </>
     );

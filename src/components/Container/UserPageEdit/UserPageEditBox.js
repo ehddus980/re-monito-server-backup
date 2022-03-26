@@ -1,4 +1,4 @@
-import { BackDiv, Editname,EditText,Line } from "../../Presenter/UserPageEdit/UserPageEditBoxPresenter";
+import { BackDiv, Editname,EditText,Line, Linee } from "../../Presenter/UserPageEdit/UserPageEditBoxPresenter";
 
 
 const UserPageEditBox = () => {
@@ -42,17 +42,16 @@ const UserPageEditBox = () => {
                 </tr>
               </Line>
               
-              <Line>
+              <Linee>
                 <tr>
                   <td><Editname>비밀번호 변경</Editname></td>
                   <td><EditText>
                     <input placeholder="현재 비밀번호"></input> <br/>
                     <input placeholder="새 비밀번호"></input> <br/>
                     <input placeholder="비밀번호 재확인"></input> 
-                    <button>변경</button>
                   </EditText></td>
                 </tr>
-              </Line>
+              </Linee>
               
             </table>
           </BackDiv>

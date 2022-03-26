@@ -8,6 +8,7 @@ const BackDiv = styled.div`
     margin-top: 20px;
     background-color: rgb(247, 247, 247);
     width: 600px;
+    border-radius: 1.5em;
 `;
 
 const Mtitle = styled.div`

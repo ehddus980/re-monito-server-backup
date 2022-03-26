@@ -6,6 +6,7 @@ const BackDiv = styled.div`
     height: 35em;
     width: 55em;
     box-shadow : 0.2em 0.2em 0.7em 0.2em #DBD9D6;
+    border-radius: 1.5em;
 `;
 
 
@@ -30,4 +31,9 @@ height:8.63em;
 border-bottom:0.1em solid #EDEBE9;
 `;
 
-export {BackDiv, Editname ,EditText, Line};
+const Linee = styled.div`
+width:54.7em;
+height:8.63em;
+`;
+
+export {BackDiv, Editname ,EditText, Line, Linee};

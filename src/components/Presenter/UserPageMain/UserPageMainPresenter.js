@@ -82,6 +82,9 @@ border:25%;
         color:white;
         cursor: pointer;
       }
+      &:active {
+        background: #F2AF49;
+      }
 }
 
     
