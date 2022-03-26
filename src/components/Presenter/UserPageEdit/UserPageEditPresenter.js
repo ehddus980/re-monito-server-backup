@@ -74,18 +74,18 @@ const UserPageEditBtnSave = styled.div`
 
     .UserEditBtn{
         padding : 0.7em 1.4em;
-        background: #F4C782;
+        background: #FDD08B;
         color:white;
         text-decoration:none;
         border-radius: 0.7em;
         font-weight:bold;
 
         &:hover{
-            background-color:#F5C06F;
+            background-color:#F8BA5C;
             cursor: pointer;
           }
         &:active {
-            background: #F2A733;
+            background: #F9B242;
           }
     }
 
