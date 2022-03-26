@@ -5,9 +5,9 @@ height: 100vh;
 `;
 
 const MeasurementTitle = styled.div`
-    margin-top : 7vh;
+    margin-top : 1em;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.7em;
     color: #E9BE81;
     font-weight: bold;
 `;

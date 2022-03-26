@@ -71,12 +71,19 @@ padding-top:0.5em;
 text-decoration: none;
 border:25%;
 .UserPageBtn{
+    font-weight: bold;
     padding : 0.7em 1.4em;
     background-color:white;
-    color:black;
+    color:gray;
     text-decoration:none;
     border-radius: 0.7em;
+    &:hover{
+        background: #F4C782;
+        color:white;
+        cursor: pointer;
+      }
 }
+
     
 `;
 

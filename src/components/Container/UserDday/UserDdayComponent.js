@@ -1,5 +1,6 @@
 import {
-
+    BackDiv,
+    DdayTitle,
 }
 from "../../Presenter/UserDday/UseDdayPresent";
 
@@ -8,9 +9,9 @@ const UserDday = () => {
     
     return (
         <>
-            <p>디데이계산기다</p>
-            <p>디데이계산기다</p>
-            <p>디데이계산기다</p>
+            <BackDiv>
+                <DdayTitle>디데이 설정</DdayTitle>
+            </BackDiv>
         </>
     );
 };
