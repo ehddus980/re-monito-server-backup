@@ -14,25 +14,29 @@ import CalendarBody from "./components/Container/Calendar/CalendarBody";
 import UserDday from "./components/Container/UserDday/UserDdayComponent";
 import RoomCreate from "./components/Container/StudyGroup/roomCreate";
 import RoomUpdate from "./components/Container/StudyGroup/roomUpdate";
+import { BottomBody } from "./components/Presenter/Nav/TopNavPresenter";
 
 
 function App() {
   return (
     <>
-      <TopNav/>
-      <Routes>  {/* Router 설정하기위해 기존의 App파일을 다음과 같이 설정함  */}
-        <Route exact path="/" element={<Main/>} />
-        <Route path="/Calendar" element={<CalendarBody/>} />
-        <Route path="/Planner" element={< Planner/>}/>
-        <Route path="/MainCam" element={< MainCam/>}/>
-        <Route path="/UserPageMain" element={<UserPageMain/>}/>
-        <Route path="/UserPageEdit" element={<UserPageEdit/>}/>
-        <Route path="/UserMeasurement" element={<UserMeasurement/>}/>
-        <Route path="/StudyGroup" element={<StudyGroup/>}/>
-        <Route path="/RoomCreate" element={<RoomCreate/>}/>
-        <Route path="/StudyGroup/RoomUpdate" element={<RoomUpdate/>}/>
-        <Route path="/UserDday" element={<UserDday/>}/>
-      </Routes>
+      <TopNav />
+      <BottomBody>
+        <Routes>  {/* Router 설정하기위해 기존의 App파일을 다음과 같이 설정함  */}
+          <Route exact path="/" element={<Main/>} />
+          <Route path="/Calendar" element={<Calendar/>} />
+          <Route path="/Planner" element={< Planner/>}/>
+          <Route path="/MainCam" element={< MainCam/>}/>
+          <Route path="/UserPageMain" element={<UserPageMain/>}/>
+          <Route path="/UserPageEdit" element={<UserPageEdit/>}/>
+          <Route path="/UserMeasurement" element={<UserMeasurement/>}/>
+          <Route path="/StudyGroup" element={<StudyGroup/>}/>
+          <Route path="/RoomCreate" element={<RoomCreate/>}/>
+          <Route path="/StudyGroup/RoomUpdate" element={<RoomUpdate/>}/>
+          <Route path="/UserDday" element={<UserDday/>}/>
+        </Routes>
+      </BottomBody>
+
       {/* <ChakraProvider>
         <Main/>
         <Login />

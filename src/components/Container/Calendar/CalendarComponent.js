@@ -5,12 +5,16 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 import CalendarBody from './CalendarBody';
+import { AlignTitle } from '../../Presenter/Calendar/CalendarTitlePresenter';
 
-const eventListener = () => {
+const Calendar = () => {
   return (
     <>
+      <AlignTitle>
+        <h1>일정 관리</h1>
+      </AlignTitle>
       <CalendarBody />
     </>
   )
 }
-export default eventListener;
+export default Calendar;

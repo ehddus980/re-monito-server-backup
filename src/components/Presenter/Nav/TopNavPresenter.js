@@ -6,14 +6,19 @@ import styled from "styled-components";
 </style>
 
 const NavBody = styled.div`
-    padding:2%;
     font-size:large;
     font-family: 'Noto Sans KR', sans-serif;
 `
 
 const NavAllContainer = styled.div`
+    position: fixed;
+    right:0px;
+    left:0;
+    padding:2%;
+    top: 0;
+    padding-bottom:2vh;
+    background-color:rgba(255, 255, 255, 0.8);
     display : flex;
-    width:100%;
     justify-content: space-between;
     .top-nav-title{
         text-decoration: none; 
@@ -70,5 +75,11 @@ const NavListContainer = styled.div`
         font-size: medium;
         font-weight: bold;
       }
+      .user-name{
+          padding-right:2%;
+      }
 `
-export { NavBody, NavAllContainer, NavListContainer };
+const BottomBody = styled.div`
+    padding-top:15vmin;
+`
+export { NavBody, NavAllContainer, NavListContainer,BottomBody };
